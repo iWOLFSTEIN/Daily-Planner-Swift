@@ -26,6 +26,12 @@
                                 <color key="textColor" red="0.51764705882352935" green="0.50588235294117645" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday - Dec 12, 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXJ-Vg-9Om">
+                                <rect key="frame" x="24" y="96" width="203" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 163793" translatesAutoresizingMaskIntoConstraints="NO" id="3rg-NZ-Zbp">
                                 <rect key="frame" x="135.33333333333334" y="68" width="24" height="24"/>
                                 <constraints>
@@ -54,23 +60,27 @@
                                     <constraint firstAttribute="height" constant="114" id="NVS-ex-UAl"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday - Dec 12, 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXJ-Vg-9Om">
-                                <rect key="frame" x="24" y="96" width="203" height="22"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qZ-Mr-OWT">
+                                <rect key="frame" x="24" y="282" width="342" height="394"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="394" id="m6h-1P-5nL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.94901960784313721" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Jxa-S9-VH3" firstAttribute="leading" secondItem="4Wm-oH-GVV" secondAttribute="trailing" constant="20.670000000000002" id="0Cw-hU-dAe"/>
+                            <constraint firstItem="7qZ-Mr-OWT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="AdI-5W-m3Q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jxa-S9-VH3" secondAttribute="trailing" constant="27.670000000000002" id="DQ6-GP-tT3"/>
                             <constraint firstItem="uIR-oB-Ic6" firstAttribute="top" secondItem="lXJ-Vg-9Om" secondAttribute="bottom" constant="30" id="Dim-A4-KDT"/>
                             <constraint firstItem="3rg-NZ-Zbp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="DmS-ax-oF0"/>
                             <constraint firstItem="lXJ-Vg-9Om" firstAttribute="top" secondItem="cd3-yv-gMv" secondAttribute="bottom" constant="6" id="ECF-cW-C1y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIR-oB-Ic6" secondAttribute="trailing" constant="24" id="F5E-lz-3aO"/>
+                            <constraint firstItem="7qZ-Mr-OWT" firstAttribute="top" secondItem="uIR-oB-Ic6" secondAttribute="bottom" constant="20" id="P0t-SG-8F4"/>
                             <constraint firstItem="cd3-yv-gMv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="WqF-wj-dYB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7qZ-Mr-OWT" secondAttribute="trailing" constant="24" id="Wre-f2-2eo"/>
                             <constraint firstItem="lXJ-Vg-9Om" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Wt6-T5-Mea"/>
                             <constraint firstItem="3rg-NZ-Zbp" firstAttribute="leading" secondItem="cd3-yv-gMv" secondAttribute="trailing" id="hfH-vC-qQX"/>
                             <constraint firstItem="cd3-yv-gMv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="hyY-2w-0Fw"/>
@@ -79,6 +89,7 @@
                             <constraint firstItem="uIR-oB-Ic6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="nR9-XN-GKj"/>
                         </constraints>
                         <connections>
+                            <outlet property="itemsListView" destination="7qZ-Mr-OWT" id="eNb-3s-gRa"/>
                             <outlet property="quoteView" destination="uIR-oB-Ic6" id="NZ4-vJ-mOv"/>
                         </connections>
                     </view>

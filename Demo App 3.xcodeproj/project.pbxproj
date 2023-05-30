@@ -15,6 +15,9 @@
 		1213DFAF2A25D4D0000E2FB0 /* DailyPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFAE2A25D4D0000E2FB0 /* DailyPlannerViewController.swift */; };
 		1213DFB22A25DEFE000E2FB0 /* UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFB12A25DEFE000E2FB0 /* UIConfigurations.swift */; };
 		1213DFB52A25E016000E2FB0 /* DailyPlannerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFB42A25E016000E2FB0 /* DailyPlannerContentView.swift */; };
+		1213DFB72A25E8D2000E2FB0 /* DailyPlannerItemListTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFB62A25E8D2000E2FB0 /* DailyPlannerItemListTile.swift */; };
+		1213DFBC2A25E912000E2FB0 /* DailyPlannerItemListTile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DFBB2A25E912000E2FB0 /* DailyPlannerItemListTile.xib */; };
+		1213DFC02A2601C2000E2FB0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFBF2A2601C2000E2FB0 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		1213DFAE2A25D4D0000E2FB0 /* DailyPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlannerViewController.swift; sourceTree = "<group>"; };
 		1213DFB12A25DEFE000E2FB0 /* UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfigurations.swift; sourceTree = "<group>"; };
 		1213DFB42A25E016000E2FB0 /* DailyPlannerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlannerContentView.swift; sourceTree = "<group>"; };
+		1213DFB62A25E8D2000E2FB0 /* DailyPlannerItemListTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlannerItemListTile.swift; sourceTree = "<group>"; };
+		1213DFBB2A25E912000E2FB0 /* DailyPlannerItemListTile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyPlannerItemListTile.xib; sourceTree = "<group>"; };
+		1213DFBF2A2601C2000E2FB0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 		1213DF992A25CFF0000E2FB0 /* Demo App 3 */ = {
 			isa = PBXGroup;
 			children = (
+				1213DFBE2A2601B6000E2FB0 /* Extension */,
+				1213DFBD2A2601A9000E2FB0 /* Globals */,
 				1213DF9A2A25CFF0000E2FB0 /* AppDelegate.swift */,
 				1213DF9C2A25CFF0000E2FB0 /* SceneDelegate.swift */,
 				1213DFA02A25CFF0000E2FB0 /* Main.storyboard */,
@@ -68,6 +76,7 @@
 				1213DFA82A25CFF1000E2FB0 /* Info.plist */,
 				1213DFB02A25D508000E2FB0 /* Screens */,
 				1213DFB12A25DEFE000E2FB0 /* UIConfigurations.swift */,
+				1213DFB82A25E8D7000E2FB0 /* Components */,
 			);
 			path = "Demo App 3";
 			sourceTree = "<group>";
@@ -87,6 +96,30 @@
 				1213DFB42A25E016000E2FB0 /* DailyPlannerContentView.swift */,
 			);
 			path = DailtyPlanner;
+			sourceTree = "<group>";
+		};
+		1213DFB82A25E8D7000E2FB0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1213DFB62A25E8D2000E2FB0 /* DailyPlannerItemListTile.swift */,
+				1213DFBB2A25E912000E2FB0 /* DailyPlannerItemListTile.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1213DFBD2A2601A9000E2FB0 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		1213DFBE2A2601B6000E2FB0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1213DFBF2A2601C2000E2FB0 /* UIColor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1213DFA72A25CFF1000E2FB0 /* LaunchScreen.storyboard in Resources */,
+				1213DFBC2A25E912000E2FB0 /* DailyPlannerItemListTile.xib in Resources */,
 				1213DFA42A25CFF1000E2FB0 /* Assets.xcassets in Resources */,
 				1213DFA22A25CFF0000E2FB0 /* Main.storyboard in Resources */,
 			);
@@ -161,6 +195,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1213DF9B2A25CFF0000E2FB0 /* AppDelegate.swift in Sources */,
+				1213DFC02A2601C2000E2FB0 /* UIColor.swift in Sources */,
+				1213DFB72A25E8D2000E2FB0 /* DailyPlannerItemListTile.swift in Sources */,
 				1213DFAF2A25D4D0000E2FB0 /* DailyPlannerViewController.swift in Sources */,
 				1213DFB22A25DEFE000E2FB0 /* UIConfigurations.swift in Sources */,
 				1213DF9D2A25CFF0000E2FB0 /* SceneDelegate.swift in Sources */,
