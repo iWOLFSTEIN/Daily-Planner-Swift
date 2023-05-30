@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="DailyPlannerViewController" id="BYZ-38-t0r" customClass="DailyPlannerViewController" customModule="Demo_App_3" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="DailyPlannerContentView" customModule="Demo_App_3" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -49,18 +49,9 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIR-oB-Ic6">
                                 <rect key="frame" x="24" y="148" width="342" height="114"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 35" translatesAutoresizingMaskIntoConstraints="NO" id="70T-yO-Zpw">
-                                        <rect key="frame" x="0.0" y="0.0" width="342" height="114"/>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="70T-yO-Zpw" firstAttribute="top" secondItem="uIR-oB-Ic6" secondAttribute="top" id="Kah-4v-jdm"/>
-                                    <constraint firstAttribute="bottom" secondItem="70T-yO-Zpw" secondAttribute="bottom" id="Lhh-Km-uhN"/>
                                     <constraint firstAttribute="height" constant="114" id="NVS-ex-UAl"/>
-                                    <constraint firstItem="70T-yO-Zpw" firstAttribute="leading" secondItem="uIR-oB-Ic6" secondAttribute="leading" id="f3V-xm-61U"/>
-                                    <constraint firstAttribute="trailing" secondItem="70T-yO-Zpw" secondAttribute="trailing" id="wQy-gH-jcr"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday - Dec 12, 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXJ-Vg-9Om">
@@ -87,7 +78,13 @@
                             <constraint firstItem="Jxa-S9-VH3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26.329999999999998" id="kiD-wB-C50"/>
                             <constraint firstItem="uIR-oB-Ic6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="nR9-XN-GKj"/>
                         </constraints>
+                        <connections>
+                            <outlet property="quoteView" destination="uIR-oB-Ic6" id="NZ4-vJ-mOv"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="8bC-Xf-vdC" id="TXa-aq-NWS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +94,6 @@
     <resources>
         <image name="Group 13560" width="51" height="56"/>
         <image name="Group 163793" width="72" height="72"/>
-        <image name="Mask Group 35" width="981" height="342"/>
         <image name="calendar" width="37" height="36"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -14,6 +14,7 @@
 		1213DFA72A25CFF1000E2FB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1213DFA52A25CFF1000E2FB0 /* LaunchScreen.storyboard */; };
 		1213DFAF2A25D4D0000E2FB0 /* DailyPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFAE2A25D4D0000E2FB0 /* DailyPlannerViewController.swift */; };
 		1213DFB22A25DEFE000E2FB0 /* UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFB12A25DEFE000E2FB0 /* UIConfigurations.swift */; };
+		1213DFB52A25E016000E2FB0 /* DailyPlannerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFB42A25E016000E2FB0 /* DailyPlannerContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1213DFA82A25CFF1000E2FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1213DFAE2A25D4D0000E2FB0 /* DailyPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlannerViewController.swift; sourceTree = "<group>"; };
 		1213DFB12A25DEFE000E2FB0 /* UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfigurations.swift; sourceTree = "<group>"; };
+		1213DFB42A25E016000E2FB0 /* DailyPlannerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlannerContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +75,18 @@
 		1213DFB02A25D508000E2FB0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1213DFAE2A25D4D0000E2FB0 /* DailyPlannerViewController.swift */,
+				1213DFB32A25DFF4000E2FB0 /* DailtyPlanner */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		1213DFB32A25DFF4000E2FB0 /* DailtyPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				1213DFAE2A25D4D0000E2FB0 /* DailyPlannerViewController.swift */,
+				1213DFB42A25E016000E2FB0 /* DailyPlannerContentView.swift */,
+			);
+			path = DailtyPlanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 				1213DFAF2A25D4D0000E2FB0 /* DailyPlannerViewController.swift in Sources */,
 				1213DFB22A25DEFE000E2FB0 /* UIConfigurations.swift in Sources */,
 				1213DF9D2A25CFF0000E2FB0 /* SceneDelegate.swift in Sources */,
+				1213DFB52A25E016000E2FB0 /* DailyPlannerContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
