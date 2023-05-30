@@ -10,6 +10,7 @@ import UIKit
 extension UIColor {
     
     static let quoteGradientLeft = UIColor(named: "quoteViewGradientLeft")
+    static let quoteGradientRight = UIColor(named: "quoteViewGradientRight")
     
 }
 

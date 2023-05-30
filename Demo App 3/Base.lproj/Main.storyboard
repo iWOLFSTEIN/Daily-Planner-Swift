@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday - Dec 12, 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXJ-Vg-9Om">
-                                <rect key="frame" x="24" y="96" width="203" height="22"/>
+                                <rect key="frame" x="24" y="96" width="202.66666666666666" height="21.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -54,17 +54,105 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIR-oB-Ic6">
-                                <rect key="frame" x="24" y="148" width="342" height="114"/>
+                                <rect key="frame" x="24" y="147.66666666666666" width="342" height="113.99999999999997"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 35" translatesAutoresizingMaskIntoConstraints="NO" id="XMl-ra-BYc">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="114"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgZ-Zh-HkN">
+                                        <rect key="frame" x="41" y="25.666666666666682" width="260" height="62.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have to believe in yourself. That's the secret of success." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEi-Jj-0mv">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="0o4-Eq-WXn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Charles Chaplin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnn-UY-yjr">
+                                                <rect key="frame" x="82.666666666666657" y="48.333333333333314" width="94.666666666666657" height="14.333333333333336"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14.33" id="Bjz-i4-TOJ"/>
+                                                    <constraint firstAttribute="width" constant="94.670000000000002" id="Yzm-S3-0km"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rnn-UY-yjr" firstAttribute="centerX" secondItem="dgZ-Zh-HkN" secondAttribute="centerX" id="B5o-qG-Pfh"/>
+                                            <constraint firstAttribute="trailing" secondItem="BEi-Jj-0mv" secondAttribute="trailing" id="e9M-QZ-dm8"/>
+                                            <constraint firstItem="BEi-Jj-0mv" firstAttribute="top" secondItem="dgZ-Zh-HkN" secondAttribute="top" id="i2s-bc-1HJ"/>
+                                            <constraint firstItem="BEi-Jj-0mv" firstAttribute="leading" secondItem="dgZ-Zh-HkN" secondAttribute="leading" id="jGa-Jf-TTi"/>
+                                            <constraint firstAttribute="width" constant="260" id="l1w-zy-LFQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="rnn-UY-yjr" secondAttribute="bottom" id="rtv-QM-8f0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="XMl-ra-BYc" firstAttribute="top" secondItem="uIR-oB-Ic6" secondAttribute="top" id="DTv-RS-dyW"/>
                                     <constraint firstAttribute="height" constant="114" id="NVS-ex-UAl"/>
+                                    <constraint firstAttribute="trailing" secondItem="XMl-ra-BYc" secondAttribute="trailing" id="OKK-dZ-72H"/>
+                                    <constraint firstItem="dgZ-Zh-HkN" firstAttribute="centerX" secondItem="uIR-oB-Ic6" secondAttribute="centerX" id="T0V-gw-6QZ"/>
+                                    <constraint firstItem="dgZ-Zh-HkN" firstAttribute="centerY" secondItem="uIR-oB-Ic6" secondAttribute="centerY" id="Y3I-yD-1Cu"/>
+                                    <constraint firstItem="dgZ-Zh-HkN" firstAttribute="top" secondItem="uIR-oB-Ic6" secondAttribute="top" constant="25.666666666666686" id="dfB-OY-KSB"/>
+                                    <constraint firstAttribute="bottom" secondItem="XMl-ra-BYc" secondAttribute="bottom" id="iBn-vA-PkI"/>
+                                    <constraint firstItem="XMl-ra-BYc" firstAttribute="leading" secondItem="uIR-oB-Ic6" secondAttribute="leading" id="t2M-8f-baH"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qZ-Mr-OWT">
-                                <rect key="frame" x="24" y="282" width="342" height="394"/>
+                                <rect key="frame" x="24" y="281.66666666666669" width="342" height="389.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="hnc-p2-cdH">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="389"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PL-Bv-mH0" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="64"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tw1-AR-I6Q" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="65" width="342" height="64"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHw-J7-hRz" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="130" width="342" height="64"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ya-Hb-gG4" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="195" width="342" height="64"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qJ-QM-YqU" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="259.99999999999994" width="342" height="59"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UsN-7D-xhW" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="319.99999999999994" width="342" height="69"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3PL-Bv-mH0" firstAttribute="leading" secondItem="hnc-p2-cdH" secondAttribute="leading" id="1iX-PA-Q21"/>
+                                            <constraint firstItem="UsN-7D-xhW" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="319.99999999999994" id="3y8-1U-Ii0"/>
+                                            <constraint firstItem="4ya-Hb-gG4" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="195" id="GdZ-s2-vsg"/>
+                                            <constraint firstItem="fHw-J7-hRz" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="130" id="LTP-8K-sGs"/>
+                                            <constraint firstItem="Tw1-AR-I6Q" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="65" id="izR-iR-d8b"/>
+                                            <constraint firstItem="7qJ-QM-YqU" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="259.99999999999994" id="o66-TP-dVh"/>
+                                            <constraint firstAttribute="trailing" secondItem="3PL-Bv-mH0" secondAttribute="trailing" id="suT-NF-ILW"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="394" id="m6h-1P-5nL"/>
+                                    <constraint firstAttribute="bottom" secondItem="hnc-p2-cdH" secondAttribute="bottom" id="LcQ-Nv-Ho8"/>
+                                    <constraint firstItem="hnc-p2-cdH" firstAttribute="leading" secondItem="7qZ-Mr-OWT" secondAttribute="leading" id="YM4-HW-xuk"/>
+                                    <constraint firstAttribute="trailing" secondItem="hnc-p2-cdH" secondAttribute="trailing" id="gxe-JQ-7bm"/>
+                                    <constraint firstItem="hnc-p2-cdH" firstAttribute="top" secondItem="7qZ-Mr-OWT" secondAttribute="top" id="lNf-gf-CUp"/>
+                                    <constraint firstAttribute="height" constant="389" id="m6h-1P-5nL"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -91,6 +179,7 @@
                         <connections>
                             <outlet property="itemsListView" destination="7qZ-Mr-OWT" id="eNb-3s-gRa"/>
                             <outlet property="quoteView" destination="uIR-oB-Ic6" id="NZ4-vJ-mOv"/>
+                            <outlet property="quoteViewImage" destination="XMl-ra-BYc" id="hZd-A2-W1M"/>
                         </connections>
                     </view>
                     <connections>
@@ -103,8 +192,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 13560" width="51" height="56"/>
+        <image name="Group 13560" width="26" height="28"/>
         <image name="Group 163793" width="72" height="72"/>
+        <image name="Mask Group 35" width="981" height="342"/>
         <image name="calendar" width="37" height="36"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

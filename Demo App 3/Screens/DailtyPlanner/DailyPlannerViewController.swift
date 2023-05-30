@@ -9,15 +9,10 @@ class DailyPlannerViewController: UIViewController {
 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-   
-    }
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+        contentView.setQuoteViewImage()
+        contentView.setQuoteViewGradients()
         
     }
 }

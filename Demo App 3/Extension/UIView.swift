@@ -1,21 +1,11 @@
+//
+//  UIView.swift
+//  Demo App 3
+//
+//  Created by BrainX Technologies on 30/05/2023.
+//
+
 import UIKit
-
-extension UITableView {
-    func dequeue<T: UITableViewCell>(for indexPath: IndexPath) -> T {
-        let identifier = T.reusableCellIdentifier
-        let cell = dequeueReusableCell(withIdentifier: identifier, for: indexPath)
-        return cell as! T
-    }
-}
-
-extension UITableViewCell {
-    static var nibName: String {
-        return String(describing: self)
-    }
-    static var reusableCellIdentifier: String {
-        return String(describing: self)
-    }
-}
 
 extension UIView {
     func applyCornerRadius(cornerRadius: CGFloat, corners: UIRectCorner) {
@@ -28,10 +18,10 @@ extension UIView {
         layer.mask = shape
     }
     
-    func applyGradient(colors: [String], startPoint: CGPoint, endPoint: CGPoint) {
+    func applyGradient(colors: [UIColor], startPoint: CGPoint, endPoint: CGPoint) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
-        gradientLayer.colors = colors.compactMap { UIColor(named: $0)?.cgColor }
+        gradientLayer.colors = colors.map { $0.cgColor }
         gradientLayer.startPoint = startPoint
         gradientLayer.endPoint = endPoint
         
