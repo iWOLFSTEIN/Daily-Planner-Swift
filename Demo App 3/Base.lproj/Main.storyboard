@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Daily Planner View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DailyPlannerViewController" id="BYZ-38-t0r" customClass="DailyPlannerViewController" customModule="Demo_App_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAILY PLANNER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd3-yv-gMv">
+                                <rect key="frame" x="23.999999999999993" y="73" width="111.33333333333331" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111.33" id="DEs-JJ-Wk9"/>
+                                    <constraint firstAttribute="height" constant="17" id="Ifs-Mc-gfT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.51764705882352935" green="0.50588235294117645" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 163793" translatesAutoresizingMaskIntoConstraints="NO" id="3rg-NZ-Zbp">
+                                <rect key="frame" x="135.33333333333334" y="68" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="jf2-j8-KM1"/>
+                                    <constraint firstAttribute="height" constant="24" id="kRb-Fc-Pil"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="4Wm-oH-GVV">
+                                <rect key="frame" x="309.66666666666669" y="73.666666666666671" width="16.666666666666686" height="16.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16.329999999999998" id="fzP-It-WDh"/>
+                                    <constraint firstAttribute="width" constant="16.670000000000002" id="j3M-bo-ueV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 13560" translatesAutoresizingMaskIntoConstraints="NO" id="Jxa-S9-VH3">
+                                <rect key="frame" x="347" y="73.333333333333329" width="15.333333333333314" height="17.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15.33" id="92O-DI-M1W"/>
+                                    <constraint firstAttribute="height" constant="17.329999999999998" id="jSc-c0-Ube"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIR-oB-Ic6">
+                                <rect key="frame" x="24" y="148" width="342" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 35" translatesAutoresizingMaskIntoConstraints="NO" id="70T-yO-Zpw">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="114"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="70T-yO-Zpw" firstAttribute="top" secondItem="uIR-oB-Ic6" secondAttribute="top" id="Kah-4v-jdm"/>
+                                    <constraint firstAttribute="bottom" secondItem="70T-yO-Zpw" secondAttribute="bottom" id="Lhh-Km-uhN"/>
+                                    <constraint firstAttribute="height" constant="114" id="NVS-ex-UAl"/>
+                                    <constraint firstItem="70T-yO-Zpw" firstAttribute="leading" secondItem="uIR-oB-Ic6" secondAttribute="leading" id="f3V-xm-61U"/>
+                                    <constraint firstAttribute="trailing" secondItem="70T-yO-Zpw" secondAttribute="trailing" id="wQy-gH-jcr"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday - Dec 12, 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXJ-Vg-9Om">
+                                <rect key="frame" x="24" y="96" width="203" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.94901960784313721" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jxa-S9-VH3" firstAttribute="leading" secondItem="4Wm-oH-GVV" secondAttribute="trailing" constant="20.670000000000002" id="0Cw-hU-dAe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jxa-S9-VH3" secondAttribute="trailing" constant="27.670000000000002" id="DQ6-GP-tT3"/>
+                            <constraint firstItem="uIR-oB-Ic6" firstAttribute="top" secondItem="lXJ-Vg-9Om" secondAttribute="bottom" constant="30" id="Dim-A4-KDT"/>
+                            <constraint firstItem="3rg-NZ-Zbp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="DmS-ax-oF0"/>
+                            <constraint firstItem="lXJ-Vg-9Om" firstAttribute="top" secondItem="cd3-yv-gMv" secondAttribute="bottom" constant="6" id="ECF-cW-C1y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIR-oB-Ic6" secondAttribute="trailing" constant="24" id="F5E-lz-3aO"/>
+                            <constraint firstItem="cd3-yv-gMv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="WqF-wj-dYB"/>
+                            <constraint firstItem="lXJ-Vg-9Om" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Wt6-T5-Mea"/>
+                            <constraint firstItem="3rg-NZ-Zbp" firstAttribute="leading" secondItem="cd3-yv-gMv" secondAttribute="trailing" id="hfH-vC-qQX"/>
+                            <constraint firstItem="cd3-yv-gMv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="hyY-2w-0Fw"/>
+                            <constraint firstItem="4Wm-oH-GVV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26.670000000000002" id="jxx-sg-Md7"/>
+                            <constraint firstItem="Jxa-S9-VH3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26.329999999999998" id="kiD-wB-C50"/>
+                            <constraint firstItem="uIR-oB-Ic6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="nR9-XN-GKj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.92307692307692" y="-2.1327014218009479"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Group 13560" width="51" height="56"/>
+        <image name="Group 163793" width="72" height="72"/>
+        <image name="Mask Group 35" width="981" height="342"/>
+        <image name="calendar" width="37" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
