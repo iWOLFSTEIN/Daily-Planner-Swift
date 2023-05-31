@@ -20,6 +20,9 @@
 		1213DFC22A261114000E2FB0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFC12A261114000E2FB0 /* UIView.swift */; };
 		1213DFC42A26114C000E2FB0 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFC32A26114C000E2FB0 /* UITableView.swift */; };
 		1213DFC62A261174000E2FB0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFC52A261174000E2FB0 /* UITableViewCell.swift */; };
+		1213DFC92A272301000E2FB0 /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFC82A272301000E2FB0 /* BottomNavigationBar.swift */; };
+		1213DFCE2A2723A7000E2FB0 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFCD2A2723A7000E2FB0 /* BaseUIView.swift */; };
+		122ACCF92A2727C4007F980B /* BottomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 122ACCF82A2727C4007F980B /* BottomNavigationBar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		1213DFC12A261114000E2FB0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		1213DFC32A26114C000E2FB0 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		1213DFC52A261174000E2FB0 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		1213DFC82A272301000E2FB0 /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
+		1213DFCD2A2723A7000E2FB0 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
+		122ACCF82A2727C4007F980B /* BottomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomNavigationBar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		1213DF992A25CFF0000E2FB0 /* Demo App 3 */ = {
 			isa = PBXGroup;
 			children = (
+				1213DFCF2A27247F000E2FB0 /* BaseViews */,
 				1213DFBE2A2601B6000E2FB0 /* Extension */,
 				1213DFBD2A2601A9000E2FB0 /* Globals */,
 				1213DF9A2A25CFF0000E2FB0 /* AppDelegate.swift */,
@@ -104,8 +111,8 @@
 		1213DFB82A25E8D7000E2FB0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				1213DFB62A25E8D2000E2FB0 /* DailyPlannerItemListTile.swift */,
-				1213DFBB2A25E912000E2FB0 /* DailyPlannerItemListTile.xib */,
+				1213DFC72A2722CC000E2FB0 /* DailyPlannerItemListTile */,
+				1213DFCC2A27232A000E2FB0 /* BottomNavigationBar */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -126,6 +133,32 @@
 				1213DFC52A261174000E2FB0 /* UITableViewCell.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		1213DFC72A2722CC000E2FB0 /* DailyPlannerItemListTile */ = {
+			isa = PBXGroup;
+			children = (
+				1213DFB62A25E8D2000E2FB0 /* DailyPlannerItemListTile.swift */,
+				1213DFBB2A25E912000E2FB0 /* DailyPlannerItemListTile.xib */,
+			);
+			path = DailyPlannerItemListTile;
+			sourceTree = "<group>";
+		};
+		1213DFCC2A27232A000E2FB0 /* BottomNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				1213DFC82A272301000E2FB0 /* BottomNavigationBar.swift */,
+				122ACCF82A2727C4007F980B /* BottomNavigationBar.xib */,
+			);
+			path = BottomNavigationBar;
+			sourceTree = "<group>";
+		};
+		1213DFCF2A27247F000E2FB0 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				1213DFCD2A2723A7000E2FB0 /* BaseUIView.swift */,
+			);
+			path = BaseViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +223,7 @@
 				1213DFBC2A25E912000E2FB0 /* DailyPlannerItemListTile.xib in Resources */,
 				1213DFA42A25CFF1000E2FB0 /* Assets.xcassets in Resources */,
 				1213DFA22A25CFF0000E2FB0 /* Main.storyboard in Resources */,
+				122ACCF92A2727C4007F980B /* BottomNavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +240,9 @@
 				1213DFB72A25E8D2000E2FB0 /* DailyPlannerItemListTile.swift in Sources */,
 				1213DFAF2A25D4D0000E2FB0 /* DailyPlannerViewController.swift in Sources */,
 				1213DFC62A261174000E2FB0 /* UITableViewCell.swift in Sources */,
+				1213DFC92A272301000E2FB0 /* BottomNavigationBar.swift in Sources */,
 				1213DFC42A26114C000E2FB0 /* UITableView.swift in Sources */,
+				1213DFCE2A2723A7000E2FB0 /* BaseUIView.swift in Sources */,
 				1213DF9D2A25CFF0000E2FB0 /* SceneDelegate.swift in Sources */,
 				1213DFB52A25E016000E2FB0 /* DailyPlannerContentView.swift in Sources */,
 			);

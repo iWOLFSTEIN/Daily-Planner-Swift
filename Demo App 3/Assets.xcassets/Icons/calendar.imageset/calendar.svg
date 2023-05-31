@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.13" height="17.786" viewBox="0 0 18.13 17.786">
+  <g id="calendar" transform="translate(0.75 0.75)">
+    <g id="Component_47_14" data-name="Component 47 – 14">
+      <g id="Component_46_1" data-name="Component 46 – 1">
+        <g id="calender_" data-name="calender " transform="translate(-331 -100)">
+          <g id="Group_7812" data-name="Group 7812" transform="translate(331 100)">
+            <path id="Path_10942" data-name="Path 10942" d="M19.374,13.943h1.178a2.054,2.054,0,0,1,2.081,2.026V26.447a2.054,2.054,0,0,1-2.081,2.026H8.1a2.054,2.054,0,0,1-2.082-2.026V15.969A2.054,2.054,0,0,1,8.1,13.943h11.5" transform="translate(-6.003 -12.187)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="1.5"/>
+            <path id="Path_10943" data-name="Path 10943" d="M29.781,7.01" transform="translate(-25.281 -7.01)" fill="#0a718c" stroke="#4a4a4a" stroke-width="1.5"/>
+            <line id="Line_113" data-name="Line 113" y2="4.491" transform="translate(5.246 0)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="1.5"/>
+            <line id="Line_114" data-name="Line 114" y2="4.491" transform="translate(12.115 0)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="1.5"/>
+            <line id="Line_118" data-name="Line 118" x2="15.823" transform="translate(0 5.412)" fill="none" stroke="#4a4a4a" stroke-linecap="round" stroke-width="1.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

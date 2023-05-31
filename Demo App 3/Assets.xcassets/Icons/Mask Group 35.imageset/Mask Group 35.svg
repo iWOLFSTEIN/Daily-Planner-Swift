@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="327" height="114" viewBox="0 0 327 114">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.426" x2="1" y2="0.393" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d4a373"/>
+      <stop offset="0" stop-color="#007aff"/>
+      <stop offset="1" stop-color="#3f95f5"/>
+    </linearGradient>
+    <filter id="bg" x="-6" y="-1" width="339" height="126" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#539eff" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#bg)">
+        <rect id="bg-2" data-name="bg" width="327" height="114" rx="12" transform="translate(-42)" opacity="0.88" fill="url(#linear-gradient)"/>
+      </g>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_35" data-name="Mask Group 35" transform="translate(42)" clip-path="url(#clip-path)">
+    <g id="Group_7903" data-name="Group 7903" transform="translate(164.826 15)" opacity="0.08">
+      <path id="Path_10975" data-name="Path 10975" d="M27.7,92.048C27.7,80.921,5,79.28,5,51.92,5,31.857,19.235,16.9,39.056,16.9c21.083.182,34.957,19.334,34.957,39.58,0,35.02-32.435,81.349-52.616,81.349-5.045,0-14.235-3.648-14.235-9.849S27.7,111.017,27.7,92.048Z" transform="translate(88.159 -16.9)" fill="#fff"/>
+      <path id="Path_10976" data-name="Path 10976" d="M79.3,92.148c0-11.126-22.7-12.768-22.7-40.127C56.6,31.957,70.835,17,90.656,17c21.263,0,35.138,19.152,35.138,39.4,0,35.02-32.435,81.349-52.616,81.349-5.045,0-14.235-3.648-14.235-9.849S79.3,111.117,79.3,92.148Z" transform="translate(-56.6 -17)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

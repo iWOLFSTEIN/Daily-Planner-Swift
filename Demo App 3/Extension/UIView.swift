@@ -28,3 +28,9 @@ extension UIView {
         layer.insertSublayer(gradientLayer, at: 0)
     }
 }
+
+extension BaseUIView {
+    static var nibName: String {
+        return String(describing: self)
+    }
+}

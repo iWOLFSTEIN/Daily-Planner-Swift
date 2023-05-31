@@ -59,8 +59,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 35" translatesAutoresizingMaskIntoConstraints="NO" id="XMl-ra-BYc">
                                         <rect key="frame" x="0.0" y="0.0" width="342" height="114"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgZ-Zh-HkN">
-                                        <rect key="frame" x="41" y="25.666666666666682" width="260" height="62.666666666666657"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgZ-Zh-HkN">
+                                        <rect key="frame" x="41" y="25.666666666666664" width="260" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have to believe in yourself. That's the secret of success." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEi-Jj-0mv">
                                                 <rect key="frame" x="0.0" y="0.0" width="260" height="45"/>
@@ -105,54 +105,45 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qZ-Mr-OWT">
-                                <rect key="frame" x="24" y="281.66666666666669" width="342" height="389.00000000000006"/>
+                                <rect key="frame" x="24" y="281.66666666666669" width="342" height="391.00000000000006"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="hnc-p2-cdH">
-                                        <rect key="frame" x="0.0" y="0.0" width="342" height="389"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="hnc-p2-cdH">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="391"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PL-Bv-mH0" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="342" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="64.333333333333329"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tw1-AR-I6Q" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="65" width="342" height="64"/>
+                                                <rect key="frame" x="0.0" y="65.333333333333314" width="342" height="64.333333333333314"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHw-J7-hRz" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="130" width="342" height="64"/>
+                                                <rect key="frame" x="0.0" y="130.66666666666663" width="342" height="64.333333333333314"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ya-Hb-gG4" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="195" width="342" height="64"/>
+                                                <rect key="frame" x="0.0" y="196" width="342" height="64.333333333333314"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qJ-QM-YqU" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="259.99999999999994" width="342" height="59"/>
+                                                <rect key="frame" x="0.0" y="261.33333333333331" width="342" height="64.333333333333314"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UsN-7D-xhW" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="319.99999999999994" width="342" height="69"/>
+                                                <rect key="frame" x="0.0" y="326.66666666666669" width="342" height="64.333333333333314"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="3PL-Bv-mH0" firstAttribute="leading" secondItem="hnc-p2-cdH" secondAttribute="leading" id="1iX-PA-Q21"/>
-                                            <constraint firstItem="UsN-7D-xhW" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="319.99999999999994" id="3y8-1U-Ii0"/>
-                                            <constraint firstItem="4ya-Hb-gG4" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="195" id="GdZ-s2-vsg"/>
-                                            <constraint firstItem="fHw-J7-hRz" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="130" id="LTP-8K-sGs"/>
-                                            <constraint firstItem="Tw1-AR-I6Q" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="65" id="izR-iR-d8b"/>
-                                            <constraint firstItem="7qJ-QM-YqU" firstAttribute="top" secondItem="hnc-p2-cdH" secondAttribute="top" constant="259.99999999999994" id="o66-TP-dVh"/>
-                                            <constraint firstAttribute="trailing" secondItem="3PL-Bv-mH0" secondAttribute="trailing" id="suT-NF-ILW"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="hnc-p2-cdH" secondAttribute="bottom" id="LcQ-Nv-Ho8"/>
-                                    <constraint firstItem="hnc-p2-cdH" firstAttribute="leading" secondItem="7qZ-Mr-OWT" secondAttribute="leading" id="YM4-HW-xuk"/>
-                                    <constraint firstAttribute="trailing" secondItem="hnc-p2-cdH" secondAttribute="trailing" id="gxe-JQ-7bm"/>
-                                    <constraint firstItem="hnc-p2-cdH" firstAttribute="top" secondItem="7qZ-Mr-OWT" secondAttribute="top" id="lNf-gf-CUp"/>
-                                    <constraint firstAttribute="height" constant="389" id="m6h-1P-5nL"/>
+                                    <constraint firstItem="hnc-p2-cdH" firstAttribute="leading" secondItem="7qZ-Mr-OWT" secondAttribute="leading" id="07c-M3-pKu"/>
+                                    <constraint firstItem="hnc-p2-cdH" firstAttribute="top" secondItem="7qZ-Mr-OWT" secondAttribute="top" id="H6K-ND-Dfp"/>
+                                    <constraint firstAttribute="trailing" secondItem="hnc-p2-cdH" secondAttribute="trailing" id="L0j-6P-uXR"/>
+                                    <constraint firstAttribute="bottom" secondItem="hnc-p2-cdH" secondAttribute="bottom" id="kiV-Xu-2AT"/>
+                                    <constraint firstAttribute="height" constant="391" id="m6h-1P-5nL"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -180,6 +171,12 @@
                             <outlet property="itemsListView" destination="7qZ-Mr-OWT" id="eNb-3s-gRa"/>
                             <outlet property="quoteView" destination="uIR-oB-Ic6" id="NZ4-vJ-mOv"/>
                             <outlet property="quoteViewImage" destination="XMl-ra-BYc" id="hZd-A2-W1M"/>
+                            <outletCollection property="dailyPlannerListTiles" destination="3PL-Bv-mH0" collectionClass="NSMutableArray" id="NBz-D7-6Ea"/>
+                            <outletCollection property="dailyPlannerListTiles" destination="Tw1-AR-I6Q" collectionClass="NSMutableArray" id="7XF-Os-fXg"/>
+                            <outletCollection property="dailyPlannerListTiles" destination="fHw-J7-hRz" collectionClass="NSMutableArray" id="yAN-zU-AnH"/>
+                            <outletCollection property="dailyPlannerListTiles" destination="4ya-Hb-gG4" collectionClass="NSMutableArray" id="DgZ-Ow-Tm0"/>
+                            <outletCollection property="dailyPlannerListTiles" destination="7qJ-QM-YqU" collectionClass="NSMutableArray" id="IvW-Jy-4VL"/>
+                            <outletCollection property="dailyPlannerListTiles" destination="UsN-7D-xhW" collectionClass="NSMutableArray" id="ufe-N7-b9V"/>
                         </connections>
                     </view>
                     <connections>
@@ -192,10 +189,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 13560" width="26" height="28"/>
-        <image name="Group 163793" width="72" height="72"/>
-        <image name="Mask Group 35" width="981" height="342"/>
-        <image name="calendar" width="37" height="36"/>
+        <image name="Group 13560" width="16.688999176025391" height="18.58799934387207"/>
+        <image name="Group 163793" width="24" height="24"/>
+        <image name="Mask Group 35" width="327" height="114"/>
+        <image name="calendar" width="18.129999160766602" height="17.785999298095703"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
