@@ -12,5 +12,7 @@ extension UIColor {
     static let quoteGradientLeft = UIColor(named: "quoteViewGradientLeft")
     static let quoteGradientRight = UIColor(named: "quoteViewGradientRight")
     
+    static let plusButtonGradientTop = UIColor(named: "plusButtonGradientTop")
+    static let plusButtonGradientBottom = UIColor(named: "plusButtonGradientBottom")
 }
 

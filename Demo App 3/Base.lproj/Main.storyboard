@@ -146,6 +146,13 @@
                                     <constraint firstAttribute="height" constant="391" id="m6h-1P-5nL"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFj-hb-ybz" customClass="BottomNavigationBar" customModule="Demo_App_3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="762" width="390" height="82"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="gOy-c3-jco"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.94901960784313721" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -161,11 +168,14 @@
                             <constraint firstItem="cd3-yv-gMv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="WqF-wj-dYB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7qZ-Mr-OWT" secondAttribute="trailing" constant="24" id="Wre-f2-2eo"/>
                             <constraint firstItem="lXJ-Vg-9Om" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Wt6-T5-Mea"/>
+                            <constraint firstItem="eFj-hb-ybz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bOI-u6-0yf"/>
+                            <constraint firstAttribute="bottom" secondItem="eFj-hb-ybz" secondAttribute="bottom" id="hYk-W1-axS"/>
                             <constraint firstItem="3rg-NZ-Zbp" firstAttribute="leading" secondItem="cd3-yv-gMv" secondAttribute="trailing" id="hfH-vC-qQX"/>
                             <constraint firstItem="cd3-yv-gMv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="hyY-2w-0Fw"/>
                             <constraint firstItem="4Wm-oH-GVV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26.670000000000002" id="jxx-sg-Md7"/>
                             <constraint firstItem="Jxa-S9-VH3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26.329999999999998" id="kiD-wB-C50"/>
                             <constraint firstItem="uIR-oB-Ic6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="nR9-XN-GKj"/>
+                            <constraint firstItem="eFj-hb-ybz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oaU-wb-Hh4"/>
                         </constraints>
                         <connections>
                             <outlet property="itemsListView" destination="7qZ-Mr-OWT" id="eNb-3s-gRa"/>
@@ -185,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.92307692307692" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="1046.1538461538462" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>

@@ -13,6 +13,5 @@ class DailyPlannerViewController: UIViewController {
         super.viewDidLayoutSubviews()
         contentView.setQuoteViewImage()
         contentView.setQuoteViewGradients()
-        
     }
 }
