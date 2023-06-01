@@ -33,25 +33,41 @@ class TabBarViewController: UIViewController {
     }
     
     @objc func goToHomeScreen(_ sender: UITapGestureRecognizer) {
-        contentView.addSubview(dailyPlannerViewController.view)
-        dailyPlannerViewController.view.frame = contentView.bounds
-        addChild(dailyPlannerViewController)
-        dotIndicatorsVisibility(ofHome: false)
+        let transitionOptions: UIView.AnimationOptions = [.transitionCrossDissolve, .curveEaseInOut]
+        let duration: TimeInterval = 0.3
+        
+        UIView.transition(with: contentView, duration: duration, options: transitionOptions, animations: {
+            self.contentView.addSubview(self.dailyPlannerViewController.view)
+            self.dailyPlannerViewController.view.frame = self.contentView.bounds
+            self.addChild(self.dailyPlannerViewController)
+            self.dotIndicatorsVisibility(ofHome: false)
+        }, completion: nil)
     }
-    
+
     @objc func goToProfileScreen(_ sender: UITapGestureRecognizer) {
-        contentView.addSubview(profileViewController.view)
-        profileViewController.view.frame = contentView.bounds
-        addChild(profileViewController)
-        dotIndicatorsVisibility(ofProfile: false)
+        let transitionOptions: UIView.AnimationOptions = [.transitionCrossDissolve, .curveEaseInOut]
+        let duration: TimeInterval = 0.3
+        
+        UIView.transition(with: contentView, duration: duration, options: transitionOptions, animations: {
+            self.contentView.addSubview(self.profileViewController.view)
+            self.profileViewController.view.frame = self.contentView.bounds
+            self.addChild(self.profileViewController)
+            self.dotIndicatorsVisibility(ofProfile: false)
+        }, completion: nil)
     }
-    
+
     @objc func goToAddScreen(_ sender: UITapGestureRecognizer) {
-        contentView.addSubview(addViewController.view)
-        addViewController.view.frame = contentView.bounds
-        addChild(addViewController)
-        dotIndicatorsVisibility()
+        let transitionOptions: UIView.AnimationOptions = [.transitionCrossDissolve, .curveEaseInOut]
+        let duration: TimeInterval = 0.3
+        
+        UIView.transition(with: contentView, duration: duration, options: transitionOptions, animations: {
+            self.contentView.addSubview(self.addViewController.view)
+            self.addViewController.view.frame = self.contentView.bounds
+            self.addChild(self.addViewController)
+            self.dotIndicatorsVisibility()
+        }, completion: nil)
     }
+
     
     func dotIndicatorsVisibility(ofHome homeDotHidden: Bool = true, ofProfile profileDotHidden: Bool = true) {
         bottomNavigationBar.homeIconDotIndicator.isHidden = homeDotHidden
