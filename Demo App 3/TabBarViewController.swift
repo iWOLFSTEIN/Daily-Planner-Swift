@@ -36,17 +36,25 @@ class TabBarViewController: UIViewController {
         contentView.addSubview(dailyPlannerViewController.view)
         dailyPlannerViewController.view.frame = contentView.bounds
         addChild(dailyPlannerViewController)
+        dotIndicatorsVisibility(ofHome: false)
     }
     
     @objc func goToProfileScreen(_ sender: UITapGestureRecognizer) {
         contentView.addSubview(profileViewController.view)
         profileViewController.view.frame = contentView.bounds
         addChild(profileViewController)
+        dotIndicatorsVisibility(ofProfile: false)
     }
     
     @objc func goToAddScreen(_ sender: UITapGestureRecognizer) {
         contentView.addSubview(addViewController.view)
         addViewController.view.frame = contentView.bounds
         addChild(addViewController)
+        dotIndicatorsVisibility()
+    }
+    
+    func dotIndicatorsVisibility(ofHome homeDotHidden: Bool = true, ofProfile profileDotHidden: Bool = true) {
+        bottomNavigationBar.homeIconDotIndicator.isHidden = homeDotHidden
+        bottomNavigationBar.profileIconDotIndicator.isHidden = profileDotHidden
     }
 }
