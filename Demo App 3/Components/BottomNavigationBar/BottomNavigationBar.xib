@@ -4,15 +4,16 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomNavigationBar" customModule="Demo_App_3" customModuleProvider="target">
             <connections>
                 <outlet property="homeIconDotIndicator" destination="JX9-yq-MCM" id="Y9k-LT-jay"/>
+                <outlet property="homeIconView" destination="AJa-h5-xaD" id="qIh-Ib-fRN"/>
                 <outlet property="plusButtonView" destination="PKU-z3-iee" id="8nJ-ja-7dI"/>
                 <outlet property="profileIconDotIndicator" destination="txX-0t-hJb" id="Qqm-1B-1rl"/>
+                <outlet property="profileIconView" destination="37B-KR-a9w" id="g4w-Xi-kIC"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -71,7 +72,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="PKU-z3-iee" firstAttribute="leading" secondItem="JX9-yq-MCM" secondAttribute="trailing" constant="69.670000000000002" id="Sx2-99-njR"/>
                 <constraint firstItem="txX-0t-hJb" firstAttribute="leading" secondItem="PKU-z3-iee" secondAttribute="trailing" constant="72.670000000000002" id="TP1-Vh-eo2"/>
@@ -92,8 +93,5 @@
         <image name="Path 19" width="16.36400032043457" height="16.36400032043457"/>
         <image name="icn_home_active" width="18.200000762939453" height="20"/>
         <image name="profile_pic" width="42" height="42"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

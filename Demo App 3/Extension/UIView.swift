@@ -24,6 +24,7 @@ extension UIView {
         gradientLayer.colors = colors.map { $0.cgColor }
         gradientLayer.startPoint = startPoint
         gradientLayer.endPoint = endPoint
+        gradientLayer.cornerRadius = 21.5
         
         layer.insertSublayer(gradientLayer, at: 0)
     }

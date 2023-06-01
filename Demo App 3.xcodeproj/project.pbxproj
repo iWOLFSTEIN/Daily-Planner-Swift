@@ -23,7 +23,13 @@
 		1213DFC92A272301000E2FB0 /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFC82A272301000E2FB0 /* BottomNavigationBar.swift */; };
 		1213DFCE2A2723A7000E2FB0 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DFCD2A2723A7000E2FB0 /* BaseUIView.swift */; };
 		122ACCF92A2727C4007F980B /* BottomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 122ACCF82A2727C4007F980B /* BottomNavigationBar.xib */; };
-		122ACCFB2A275BCC007F980B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122ACCFA2A275BCC007F980B /* TabBarViewController.swift */; };
+		1262336A2A2772810063E7B0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126233692A2772810063E7B0 /* TabBarViewController.swift */; };
+		1262336C2A278C2E0063E7B0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262336B2A278C2E0063E7B0 /* UIViewController.swift */; };
+		1262336E2A28B1150063E7B0 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262336D2A28B1150063E7B0 /* AddViewController.swift */; };
+		126233702A28B1240063E7B0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262336F2A28B1240063E7B0 /* ProfileViewController.swift */; };
+		126233722A28BD070063E7B0 /* QuoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126233712A28BD070063E7B0 /* QuoteAPI.swift */; };
+		126233752A28BFA20063E7B0 /* TaskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126233742A28BFA20063E7B0 /* TaskAPI.swift */; };
+		126233772A28C24B0063E7B0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126233762A28C24B0063E7B0 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +51,13 @@
 		1213DFC82A272301000E2FB0 /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
 		1213DFCD2A2723A7000E2FB0 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		122ACCF82A2727C4007F980B /* BottomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomNavigationBar.xib; sourceTree = "<group>"; };
-		122ACCFA2A275BCC007F980B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		126233692A2772810063E7B0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
+		1262336B2A278C2E0063E7B0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		1262336D2A28B1150063E7B0 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		1262336F2A28B1240063E7B0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		126233712A28BD070063E7B0 /* QuoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteAPI.swift; sourceTree = "<group>"; };
+		126233742A28BFA20063E7B0 /* TaskAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAPI.swift; sourceTree = "<group>"; };
+		126233762A28C24B0063E7B0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +92,6 @@
 			children = (
 				1213DFCF2A27247F000E2FB0 /* BaseViews */,
 				1213DFBE2A2601B6000E2FB0 /* Extension */,
-				1213DFBD2A2601A9000E2FB0 /* Globals */,
 				1213DF9A2A25CFF0000E2FB0 /* AppDelegate.swift */,
 				1213DF9C2A25CFF0000E2FB0 /* SceneDelegate.swift */,
 				1213DFA02A25CFF0000E2FB0 /* Main.storyboard */,
@@ -89,7 +100,8 @@
 				1213DFA82A25CFF1000E2FB0 /* Info.plist */,
 				1213DFB02A25D508000E2FB0 /* Screens */,
 				1213DFB82A25E8D7000E2FB0 /* Components */,
-				122ACCFA2A275BCC007F980B /* TabBarViewController.swift */,
+				126233732A28BDE20063E7B0 /* APIs */,
+				126233782A28C92A0063E7B0 /* Services */,
 			);
 			path = "Demo App 3";
 			sourceTree = "<group>";
@@ -97,6 +109,9 @@
 		1213DFB02A25D508000E2FB0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1262336D2A28B1150063E7B0 /* AddViewController.swift */,
+				1262336F2A28B1240063E7B0 /* ProfileViewController.swift */,
+				126233692A2772810063E7B0 /* TabBarViewController.swift */,
 				1213DFB32A25DFF4000E2FB0 /* DailtyPlanner */,
 			);
 			path = Screens;
@@ -120,13 +135,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		1213DFBD2A2601A9000E2FB0 /* Globals */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Globals;
-			sourceTree = "<group>";
-		};
 		1213DFBE2A2601B6000E2FB0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +142,7 @@
 				1213DFC12A261114000E2FB0 /* UIView.swift */,
 				1213DFC32A26114C000E2FB0 /* UITableView.swift */,
 				1213DFC52A261174000E2FB0 /* UITableViewCell.swift */,
+				1262336B2A278C2E0063E7B0 /* UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -162,6 +171,23 @@
 				1213DFCD2A2723A7000E2FB0 /* BaseUIView.swift */,
 			);
 			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		126233732A28BDE20063E7B0 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				126233712A28BD070063E7B0 /* QuoteAPI.swift */,
+				126233742A28BFA20063E7B0 /* TaskAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		126233782A28C92A0063E7B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				126233762A28C24B0063E7B0 /* APIManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,16 +264,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1213DFC22A261114000E2FB0 /* UIView.swift in Sources */,
+				126233722A28BD070063E7B0 /* QuoteAPI.swift in Sources */,
 				1213DF9B2A25CFF0000E2FB0 /* AppDelegate.swift in Sources */,
+				1262336E2A28B1150063E7B0 /* AddViewController.swift in Sources */,
 				1213DFC02A2601C2000E2FB0 /* UIColor.swift in Sources */,
 				1213DFB72A25E8D2000E2FB0 /* DailyPlannerItemListTile.swift in Sources */,
-				122ACCFB2A275BCC007F980B /* TabBarViewController.swift in Sources */,
+				1262336A2A2772810063E7B0 /* TabBarViewController.swift in Sources */,
 				1213DFAF2A25D4D0000E2FB0 /* DailyPlannerViewController.swift in Sources */,
 				1213DFC62A261174000E2FB0 /* UITableViewCell.swift in Sources */,
+				1262336C2A278C2E0063E7B0 /* UIViewController.swift in Sources */,
 				1213DFC92A272301000E2FB0 /* BottomNavigationBar.swift in Sources */,
 				1213DFC42A26114C000E2FB0 /* UITableView.swift in Sources */,
+				126233772A28C24B0063E7B0 /* APIManager.swift in Sources */,
 				1213DFCE2A2723A7000E2FB0 /* BaseUIView.swift in Sources */,
+				126233702A28B1240063E7B0 /* ProfileViewController.swift in Sources */,
 				1213DF9D2A25CFF0000E2FB0 /* SceneDelegate.swift in Sources */,
+				126233752A28BFA20063E7B0 /* TaskAPI.swift in Sources */,
 				1213DFB52A25E016000E2FB0 /* DailyPlannerContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
