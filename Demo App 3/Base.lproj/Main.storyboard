@@ -210,6 +210,8 @@
                         </constraints>
                         <connections>
                             <outlet property="itemsListView" destination="7qZ-Mr-OWT" id="eNb-3s-gRa"/>
+                            <outlet property="quoteAuthor" destination="rnn-UY-yjr" id="7Xp-9K-VWw"/>
+                            <outlet property="quoteText" destination="BEi-Jj-0mv" id="Gjq-NS-azt"/>
                             <outlet property="quoteView" destination="uIR-oB-Ic6" id="NZ4-vJ-mOv"/>
                             <outlet property="quoteViewImage" destination="XMl-ra-BYc" id="hZd-A2-W1M"/>
                             <outletCollection property="dailyPlannerListTiles" destination="3PL-Bv-mH0" collectionClass="NSMutableArray" id="NBz-D7-6Ea"/>

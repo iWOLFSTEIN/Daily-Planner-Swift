@@ -9,12 +9,12 @@ import Combine
 import Foundation
 
 protocol APIManager {
-    func performRequest<T>(on api: AnyPublisher<Any, Error>) -> AnyPublisher<T, Error>
+    func performRequest<T>(on api: AnyPublisher<T, Error>) -> AnyPublisher<T, Error>
 }
 
 class LocalAPIManager: APIManager {
     
-    func performRequest<T>(on api: AnyPublisher<Any, Error>) -> AnyPublisher<T, Error> {
+    func performRequest<T>(on api: AnyPublisher<T, Error>) -> AnyPublisher<T, Error> {
         return api
             .tryMap { value -> T in
                 guard let typedValue = value as? T else {

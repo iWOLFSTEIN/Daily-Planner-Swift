@@ -6,6 +6,8 @@ class DailyPlannerContentView: UIView {
     @IBOutlet weak var itemsListView: UIView!
     @IBOutlet weak var quoteViewImage: UIImageView!
     
+    @IBOutlet weak var quoteAuthor: UILabel!
+    @IBOutlet weak var quoteText: UILabel!
     @IBOutlet var dailyPlannerListTiles: [DailyPlannerItemListTile]!
     
     let dailyPlannerListTilesIcons = ["icn_surfing", "Path 22560", "Group 163622", "maybe later", "Component 131 – 1", "add notes"]

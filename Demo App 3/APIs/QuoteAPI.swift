@@ -7,11 +7,6 @@
 import Combine
 import Foundation
 
-struct Quote {
-    let text: String
-    let author: String
-}
-
 class QuoteAPI {
     static let shared = QuoteAPI()
     
