@@ -19,33 +19,23 @@ class DailyPlannerViewController: UIViewController {
     }
     
     func updateQuote() {
-        DispatchQueue.main.async {
-            ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 1.0)
-        }
+        ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 1.0)
         
-        viewModel.$quoteAuthor.sink { [weak self]
-            quoteAuthor in
-            guard let quoteAuthor else {
-                return
-            }
+        viewModel.$quoteAuthor.sink { [weak self] quoteAuthor in
+            guard let quoteAuthor = quoteAuthor else { return }
             DispatchQueue.main.async {
                 self?.contentView.quoteAuthor.text = quoteAuthor
             }
-        }
-        .store(in: &viewModel.cancellables)
+        }.store(in: &viewModel.cancellables)
         
-        viewModel.$quoteText.sink { [weak self]
-            quoteText in
-            guard let quoteText else {
-                return
-            }
+        viewModel.$quoteText.sink { [weak self] quoteText in
+            guard let quoteText = quoteText else { return }
             DispatchQueue.main.async {
                 self?.contentView.quoteText.text = quoteText
             }
-        }
-        .store(in: &viewModel.cancellables)
+        }.store(in: &viewModel.cancellables)
         
-        DispatchQueue.main.async {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             ActivityIndicator.shared.hideActivityIndicator()
         }
     }

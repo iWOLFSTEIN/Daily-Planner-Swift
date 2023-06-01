@@ -100,49 +100,38 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 35" translatesAutoresizingMaskIntoConstraints="NO" id="XMl-ra-BYc">
                                         <rect key="frame" x="0.0" y="0.0" width="342" height="114"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgZ-Zh-HkN">
-                                        <rect key="frame" x="41" y="25.666666666666664" width="260" height="64"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have to believe in yourself. That's the secret of success." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEi-Jj-0mv">
-                                                <rect key="frame" x="0.0" y="0.0" width="260" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="0o4-Eq-WXn"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Charles Chaplin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnn-UY-yjr">
-                                                <rect key="frame" x="82.666666666666657" y="48.333333333333314" width="94.666666666666657" height="14.333333333333336"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="14.33" id="Bjz-i4-TOJ"/>
-                                                    <constraint firstAttribute="width" constant="94.670000000000002" id="Yzm-S3-0km"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have to believe in yourself. That's the secret of success." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEi-Jj-0mv">
+                                        <rect key="frame" x="36" y="20" width="270" height="45"/>
                                         <constraints>
-                                            <constraint firstItem="rnn-UY-yjr" firstAttribute="centerX" secondItem="dgZ-Zh-HkN" secondAttribute="centerX" id="B5o-qG-Pfh"/>
-                                            <constraint firstAttribute="trailing" secondItem="BEi-Jj-0mv" secondAttribute="trailing" id="e9M-QZ-dm8"/>
-                                            <constraint firstItem="BEi-Jj-0mv" firstAttribute="top" secondItem="dgZ-Zh-HkN" secondAttribute="top" id="i2s-bc-1HJ"/>
-                                            <constraint firstItem="BEi-Jj-0mv" firstAttribute="leading" secondItem="dgZ-Zh-HkN" secondAttribute="leading" id="jGa-Jf-TTi"/>
-                                            <constraint firstAttribute="width" constant="260" id="l1w-zy-LFQ"/>
-                                            <constraint firstAttribute="bottom" secondItem="rnn-UY-yjr" secondAttribute="bottom" id="rtv-QM-8f0"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="fes-F6-CPC"/>
                                         </constraints>
-                                    </view>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Charles Chaplin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnn-UY-yjr">
+                                        <rect key="frame" x="123.66666666666666" y="75" width="94.666666666666657" height="14.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14.33" id="pQD-h0-6BH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94.670000000000002" id="pWU-fa-RfM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="rnn-UY-yjr" firstAttribute="top" secondItem="BEi-Jj-0mv" secondAttribute="bottom" constant="10" id="08W-hi-K5j"/>
+                                    <constraint firstItem="BEi-Jj-0mv" firstAttribute="top" secondItem="uIR-oB-Ic6" secondAttribute="top" constant="20" id="6rf-nV-fRc"/>
                                     <constraint firstItem="XMl-ra-BYc" firstAttribute="top" secondItem="uIR-oB-Ic6" secondAttribute="top" id="DTv-RS-dyW"/>
+                                    <constraint firstItem="BEi-Jj-0mv" firstAttribute="leading" secondItem="uIR-oB-Ic6" secondAttribute="leading" constant="36" id="Knn-Yf-DfX"/>
                                     <constraint firstAttribute="height" constant="114" id="NVS-ex-UAl"/>
                                     <constraint firstAttribute="trailing" secondItem="XMl-ra-BYc" secondAttribute="trailing" id="OKK-dZ-72H"/>
-                                    <constraint firstItem="dgZ-Zh-HkN" firstAttribute="centerX" secondItem="uIR-oB-Ic6" secondAttribute="centerX" id="T0V-gw-6QZ"/>
-                                    <constraint firstItem="dgZ-Zh-HkN" firstAttribute="centerY" secondItem="uIR-oB-Ic6" secondAttribute="centerY" id="Y3I-yD-1Cu"/>
-                                    <constraint firstItem="dgZ-Zh-HkN" firstAttribute="top" secondItem="uIR-oB-Ic6" secondAttribute="top" constant="25.666666666666686" id="dfB-OY-KSB"/>
+                                    <constraint firstItem="rnn-UY-yjr" firstAttribute="centerX" secondItem="uIR-oB-Ic6" secondAttribute="centerX" id="aFZ-h7-ebh"/>
                                     <constraint firstAttribute="bottom" secondItem="XMl-ra-BYc" secondAttribute="bottom" id="iBn-vA-PkI"/>
                                     <constraint firstItem="XMl-ra-BYc" firstAttribute="leading" secondItem="uIR-oB-Ic6" secondAttribute="leading" id="t2M-8f-baH"/>
+                                    <constraint firstAttribute="trailing" secondItem="BEi-Jj-0mv" secondAttribute="trailing" constant="36" id="yaT-tT-7nt"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qZ-Mr-OWT">

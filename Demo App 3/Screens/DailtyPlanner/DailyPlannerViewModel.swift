@@ -26,7 +26,6 @@ class DailyPlannerViewModel {
         quoteRepository.getRandomQuoteFromAPI()
             .sink {
                 completion in
-                print("printing something: \(completion)")
                 switch completion {
                 case .finished:
                     break
