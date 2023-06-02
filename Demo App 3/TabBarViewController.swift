@@ -67,7 +67,6 @@ class TabBarViewController: UIViewController {
             self.dotIndicatorsVisibility()
         }, completion: nil)
     }
-
     
     func dotIndicatorsVisibility(ofHome homeDotHidden: Bool = true, ofProfile profileDotHidden: Bool = true) {
         bottomNavigationBar.homeIconDotIndicator.isHidden = homeDotHidden

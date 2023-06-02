@@ -9,6 +9,7 @@ class DailyPlannerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateTaskCount()
         updateQuote()
     }
     
@@ -38,5 +39,17 @@ class DailyPlannerViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             ActivityIndicator.shared.hideActivityIndicator()
         }
+    }
+    
+    func updateTaskCount() {
+        viewModel.$tasksCountDictionaryList.sink { [weak self] taskCountList in
+            for (index, taskDictionary) in taskCountList.enumerated() {
+                DispatchQueue.main.async {
+                    let dailyPlannerListTile = self?.contentView.dailyPlannerListTiles[index]
+                    dailyPlannerListTile!.taskLabel.text = "\(taskDictionary["taskCount"]!)/\(taskDictionary["totalTaskCount"]!) task"
+                }
+            }
+        }
+        .store(in: &viewModel.cancellables)
     }
 }

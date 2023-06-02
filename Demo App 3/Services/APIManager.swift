@@ -17,21 +17,8 @@ class LocalAPIManager: APIManager {
     func performRequest<T>(on api: AnyPublisher<T, Error>) -> AnyPublisher<T, Error> {
         return api
             .tryMap { value -> T in
-                guard let typedValue = value as? T else {
-                    throw APIError.dataTypeMismatch
-                }
-                return typedValue
+                return value
             }
             .eraseToAnyPublisher()
-    }
-    
-    enum APIError: LocalizedError {
-        case dataTypeMismatch
-        
-        var errorDescription: String? {
-            switch self {
-            case .dataTypeMismatch: return "Data type mismatch"
-            }
-        }
     }
 }

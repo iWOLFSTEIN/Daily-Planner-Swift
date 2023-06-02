@@ -9,6 +9,7 @@ import UIKit
 
 class DailyPlannerItemListTile: BaseUIView {
     
+    @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var leadingIcon: UIImageView!
     @IBOutlet weak var title: UILabel!
     

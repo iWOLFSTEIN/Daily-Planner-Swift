@@ -8,12 +8,6 @@
 import Combine
 import Foundation
 
-struct Task {
-    let category: String
-    let taskCount: Int
-    let totalTaskCount: Int
-}
-
 class TaskAPI {
     static let shared = TaskAPI()
     

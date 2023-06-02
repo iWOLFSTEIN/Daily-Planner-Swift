@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DailyPlannerItemListTile" customModule="Demo_App_3" customModuleProvider="target">
             <connections>
                 <outlet property="leadingIcon" destination="Dwn-s2-1GG" id="2KJ-SF-z4W"/>
+                <outlet property="taskLabel" destination="lw4-89-z7B" id="qEf-RK-QQs"/>
                 <outlet property="title" destination="OQY-gQ-AOt" id="Xhw-Mk-uXF"/>
             </connections>
         </placeholder>

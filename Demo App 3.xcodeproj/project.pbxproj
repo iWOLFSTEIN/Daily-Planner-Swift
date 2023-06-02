@@ -34,6 +34,8 @@
 		1262337C2A28D1D60063E7B0 /* DailyPlannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262337B2A28D1D60063E7B0 /* DailyPlannerViewModel.swift */; };
 		1262337E2A28D27E0063E7B0 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1262337D2A28D27E0063E7B0 /* QuoteModel.swift */; };
 		126233812A28D3CF0063E7B0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126233802A28D3CF0063E7B0 /* ActivityIndicator.swift */; };
+		126233842A29BE970063E7B0 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126233832A29BE970063E7B0 /* TaskModel.swift */; };
+		126233862A29C0D60063E7B0 /* TaskRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126233852A29C0D60063E7B0 /* TaskRespository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		1262337B2A28D1D60063E7B0 /* DailyPlannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlannerViewModel.swift; sourceTree = "<group>"; };
 		1262337D2A28D27E0063E7B0 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
 		126233802A28D3CF0063E7B0 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		126233832A29BE970063E7B0 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		126233852A29C0D60063E7B0 /* TaskRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRespository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				1262337D2A28D27E0063E7B0 /* QuoteModel.swift */,
+				126233832A29BE970063E7B0 /* TaskModel.swift */,
 			);
 			path = DailyPlannerModels;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				126233792A28CDF30063E7B0 /* QuoteRepository.swift */,
+				126233852A29C0D60063E7B0 /* TaskRespository.swift */,
 			);
 			path = APIRepositories;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1213DFC22A261114000E2FB0 /* UIView.swift in Sources */,
+				126233842A29BE970063E7B0 /* TaskModel.swift in Sources */,
 				1262337C2A28D1D60063E7B0 /* DailyPlannerViewModel.swift in Sources */,
 				126233722A28BD070063E7B0 /* QuoteAPI.swift in Sources */,
 				1213DF9B2A25CFF0000E2FB0 /* AppDelegate.swift in Sources */,
@@ -312,6 +319,7 @@
 				126233702A28B1240063E7B0 /* ProfileViewController.swift in Sources */,
 				1213DF9D2A25CFF0000E2FB0 /* SceneDelegate.swift in Sources */,
 				126233752A28BFA20063E7B0 /* TaskAPI.swift in Sources */,
+				126233862A29C0D60063E7B0 /* TaskRespository.swift in Sources */,
 				1213DFB52A25E016000E2FB0 /* DailyPlannerContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
